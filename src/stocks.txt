@@ -1,0 +1,4 @@
+aapl
+msft
+aot.bk
+scb.bk
