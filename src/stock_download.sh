@@ -5,7 +5,7 @@
 # Author: Prasert Kanawattanachai
 # Last updated: 2021-10-05
 # GitHub: https://github.com/prasertcbs
-# Youtube: https://www.youtube.com/prasertcbs
+# YouTube: https://www.youtube.com/prasertcbs
 
 from_unix_time=$(date --date='20210901EDT' +"%s")
 to_unix_time=$(date --date='20210910EDT' +"%s")

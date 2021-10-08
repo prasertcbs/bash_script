@@ -5,7 +5,7 @@
 # Author: Prasert Kanawattanachai
 # Last updated: 2021-10-05
 # GitHub: https://github.com/prasertcbs
-# Youtube: https://www.youtube.com/prasertcbs
+# YouTube: https://www.youtube.com/prasertcbs
 
 for counter in 1 2 3 4 5; do
     echo $counter
@@ -14,6 +14,11 @@ done
 # brace expansion {1..5}
 for counter in {1..5}; do
     echo $counter
+done
+
+# brace expansion {A..F}
+for c in {A..F}; do
+    echo $c
 done
 
 # {start..stop..step}
@@ -35,14 +40,14 @@ echo 'take off ^^^^^'
 
 # simple multiplication table
 for i in {1..12}; do
-    m=$((2*i))
+    m=$((2 * i))
     echo "2 x ${i} = ${m}"
 done
 
 # multiplication table
 n=12
 for i in {1..12}; do
-    m=$((n*i))
+    m=$((n * i))
     # echo "${n} x ${i} = ${m}"
     printf "%3d x %3d = %3d\n" $n $i $m
 done
@@ -59,7 +64,7 @@ for f in "${flowers[@]}"; do
 done
 
 # iterate files
-echo -e "rose\nlily\ncarnation\ntulip" > flower.txt
+echo -e "rose\nlily\ncarnation\ntulip" >flower.txt
 for f in cats.txt dogs.txt flower.txt; do
     head -n2 "$f"
     echo '-----------'
@@ -92,13 +97,3 @@ for suit in S H D C; do
     done
     echo
 done
-
-
-
-
-
-
-
-
-
-
